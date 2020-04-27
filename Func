@@ -32,12 +32,13 @@ int main()
         double //дробни числа, плаваща запетая 
         long  // дробни, но повече (64 бита)
         long long // (дробни, 128 бита)
-
+        int array [5] = { 16, 2, 7, 5, 13 } // масив от числа, предимно се ползва за матрици
+        
         cin >> // въвежда
         cout << // извежда
 
-        char // текст - масив char "ime" [ razmer na masiv ]    Размер на масив [5]= "gosh" > g, 0 , s, h, /0
-        string // текст string ime = "   "
+        char // текст - масив char "ime" [ razmer na masiv ]    Размер на масив [5]= "goshо" > g, 0 , s, h, о, \0
+        string // текст string ime = "   "                                            масива почва да брои от 1 (пази 1 слот за \0)
 
         cout imeNaString // викаме string
         cin.getline(char, razmerNaMasiv) // cout на cin 
