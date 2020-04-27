@@ -1,0 +1,79 @@
+#include <iostream>
+#include <string> // за char и string, може да ползваш <cstring> за да има функциите и от C езика
+#include <math.h> // математически фунцкии, <cmath> за C функции
+                  // sqrt(n) = корен квадратен n, n^5, n на пета степен
+                  // pow(n, 6), n на 6та степен.
+using namespace std; // std::cout в мейн или using std:cout за оптимизация на кода
+//функции, почват int,double, string, void....
+// тип на фунция, име на функция (тип за инициализация)
+int imenafunckiq(int P, int C)
+{
+    int Sum;
+    Sum = P + C;
+    return Sum;
+
+}
+
+
+// void фунцкиите не използват return;
+// рекурсия (рекурсивна функция) е функция, която сама вика себе си.
+
+int f(int n) {
+
+    if (n <= 1)
+        return 1;
+    else
+        return n * f(n - 1);
+}
+using namespace std;
+int main()
+{
+        int //целочислени числа
+        double //дробни числа, плаваща запетая 
+        long  // дробни, но повече (64 бита)
+        long long // (дробни, 128 бита)
+
+        cin >> // въвежда
+        cout << // извежда
+
+        char // текст - масив char "ime" [ razmer na masiv ]    Размер на масив [5]= "gosh" > g, 0 , s, h, /0
+        string // текст string ime = "   "
+
+        cout imeNaString // викаме string
+        cin.getline(char, razmerNaMasiv) // cout на cin 
+
+       // сравнение на числа : равно ==  , различно !=, по-голямо или равно >= , по-малко или равно <=
+       // логическо И &&, логичсеки или ||, пример за if  -- if ((a > 5) && (a < 10)
+
+        цикли 
+        for (int i = 0, i < число, i++)
+        {
+           
+            
+        }
+
+    while (n < 5)
+    {
+        //сметки
+        n = n -1 //ограничител, иначе stack overflow ( дебъгера ти убива програмата, защото заема всичката памет)
+                 // stack overflow може да се получи при всички цикли ако нямат ограничител;
+    }
+
+    do                     // прави сметките, докато while е изпълнен;
+    {
+        //метки
+
+    } while (n < 5);
+
+    //Викане на функция
+    imenafunckiq(5, 6); // За да излезе от стойност от тука трябва да имаш cout вътре във самата функция (рядко се ползва)
+                        // или в мейна
+    
+    //Пълен пример за викане
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    cout << "Factorial of entered number: " << f(num);
+
+    return 0;
+} 
